@@ -1,6 +1,38 @@
 version: '3'
 
 services:
+  #docker.traefik:
+  #  container_name: docker.traefik
+  #  hostname: docker.traefik
+  #  image: traefik:latest
+  #  ports:
+  #    - 80:80
+  #    - 443:443
+  #    - 8080:8080
+  #  volumes:
+  #    - /var/run/docker.sock:/var/run/docker.sock
+  #    - ../var/logs/traefik/:/var/log/traefik/
+  #  networks:
+  #    - docker.net
+  #  command:
+  #    - "--api.insecure=true"
+  #    - "--log.level=DEBUG"
+  #    - "--providers.docker=true"
+  #    - "--providers.docker.exposedbydefault=true"
+  #    - "--entrypoints.web.address=:80"
+  #
+  #docker.portainer:
+  #  container_name: docker.portainer
+  #  hostname: docker.portainer
+  #  image: portainer/portainer-ce:latest
+  #  ports:
+  #    - 9001:9000
+  #  volumes:
+  #    - "/var/run/docker.sock:/var/run/docker.sock"
+  #    - ../.data/portainer/:/data
+  #  networks:
+  #    - docker.net
+
   docker.web:
     container_name: docker.web
     hostname: docker.web

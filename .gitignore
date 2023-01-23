@@ -81,3 +81,5 @@ out
 gen
 
 node_modules
+
+.data
